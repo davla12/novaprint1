@@ -1,0 +1,29 @@
+
+/* Mobilga moslashtirish */
+#star-field {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #star-field {
+    height: 100%;
+  }
+
+  .form-control, .form-select {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  header .container,
+  footer .container {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biz haqimizda | Nova Print</title>
+
+  <!-- Bootstrap & brend styli -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <!--  ➜ versiya parametri keshni yangilash uchun -->
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
+</head>
+<body>
+<div id="star-field"></div>
+
+<!-- ⭐ Yulduzlar fon maydoni -->
+<div id="star-field"></div>
+
+<!-- ===== Header (gradient logotip + sticky) ===== -->
+<header>
+  <div class="container d-flex flex-wrap align-items-center justify-content-between py-3">
+    <a href="index.html"
+       class="text-decoration-none fs-4 fw-bold"
+       style="background:linear-gradient(135deg,var(--from),var(--to));
+              -webkit-background-clip:text;color:transparent;">
+       Nova Print  <a href="index.html" class="text-white text-decoration-none fs-4 fw-bold">  +998 90 169-46-46</a>
+    </a>
+
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">Biz haqimizda</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalog.html">Kataloglar</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Bog‘lanish</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Kontent ===== -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="mb-4"
+        style="background:linear-gradient(135deg,var(--from),var(--to));
+               -webkit-background-clip:text;color:transparent;">Biz haqimizda</h1>
+
+    <p>
+      Nova Print 2022‑yildan beri mijozlarga kreativ va samarali reklama yechimlarini taqdim etib kelmoqda.
+      Tajribali dizaynerlar, zamonaviy texnologiyalar va gradient brend stil — bizning ustunligimiz!
+    </p>
+    <!-- ===== Kontent ===== -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="mb-4"
+        style="background:linear-gradient(135deg,var(--from),var(--to));
+               -webkit-background-clip:text;color:transparent;">
+                   <div class="row text-center mt-5">
+      <div class="col-md-3">
+        <h3 style="background:linear-gradient(135deg,var(--from),var(--to));
+                   -webkit-background-clip:text;color:transparent;">2022</h3>
+        <p>Tashkil topgan yil</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="text-gradient">150+</h3>
+        <p>Muvaffaqiyatli loyiha</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="text-gradient">95%</h3>
+        <p>Mijozlar roziligi</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="text-gradient">10+</h3>
+        <p>Mutaxassislar jamoasi</p>
+      </div>
+    </div>
+
+ 
+
+    <h2 class="mt-5">🎯 Missiyamiz</h2>
+    <p>
+      Har bir mijoz uchun eksklyuziv va professional xizmat ko‘rsatish — bu bizning kundalik maqsadimiz.
+      Sifat, tezkorlik va kreativlikni birlashtiramiz.
+    </p>
+
+    <h2 class="mt-4">👥 Jamoamiz</h2>
+    <p>
+      Tajribali dizaynerlar, matbaa ustalari va marketing mutaxassislaridan tashkil topgan jamoamiz sizning brendingizga xizmat qilishga tayyor!
+    </p>
+
+    <h2 class="mt-4">🛠 Xizmatlarimiz</h2>
+    <ul>
+      <li>BO'RTMA HARFLAR</li>
+      <li>BANNERLAR</li>
+      <li>Tipografiya xizmatlari (vizitka, flayer)</li>
+      <li>Maxsus reklama materiallari (brend qadoqlar, stikerlar)</li>
+      <li>Grafik dizayn (logotip, katalog)</li>
+    </ul>
+
+    <h2 class="mt-4">🤝 Hamkorlarimiz</h2>
+    <p>
+      Biz bilan 50 dan ortiq kompaniya ishlagan, ularning ayrimlari: <br>
+      <strong>Yuksalish group</strong>, <strong>Greenleaf</strong>, <strong>Akfa</strong> va boshqalar.
+    </p>
+<!-- ===== Footer ===== -->
+<footer class="text-center">
+  &copy; <span id="year"></span> — Jamshitov Davlat tomonidan yaratilgan
+</footer>
+
+<!-- ===== Skriptlar ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Yulduzlar animatsiyasi -->
+<script src="assets/js/main.js?v=3"></script>
+<script>
+  // Dinamik yil
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
