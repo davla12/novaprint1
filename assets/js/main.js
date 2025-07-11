@@ -42,7 +42,7 @@ const modals = [
   ]},
 
   // ✅ YANGI: 3D bukvalar
-  { id: 'modal-3d', title: 'Obyomli bukvalar', rows: [
+  { id: 'modal-letter', title: 'Obyomli bukvalar', rows: [
     ['50×50 sm','100 000 so‘m','3D harf 50x50'],
     ['70×70 sm','150 000 so‘m','3D harf 70x70'],
     ['LED yoritilgan','300 000 so‘m','3D LED harf'],
