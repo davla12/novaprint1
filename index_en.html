@@ -12,28 +12,40 @@
 
 <header class="bg-dark text-white">
     <div class="container d-flex flex-wrap align-items-center justify-content-between py-3">
+
+        <!-- Logo -->
         <a href="index_en.html" class="text-white text-decoration-none fs-4 fw-bold">
             Advertising Agency
         </a>
 
-        <div class="lang-dropdown position-relative">
-            <button class="btn btn-light btn-sm d-flex align-items-center gap-1" onclick="toggleLangMenu()">
-                <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN ▾
-            </button>
-            <div class="lang-menu position-absolute bg-light rounded shadow-sm" style="display:none;">
-                <a href="index.html" class="d-flex align-items-center gap-1 px-2 py-1 text-dark text-decoration-none">
-                    <img src="https://flagcdn.com/w20/uz.png" alt="UZ"> UZ
-                </a>
-                <a href="index_ru.html" class="d-flex align-items-center gap-1 px-2 py-1 text-dark text-decoration-none">
-                    <img src="https://flagcdn.com/w20/ru.png" alt="RU"> RU
-                </a>
-            </div>
-        </div>
+        <!-- Telefon -->
+        <a href="tel:+998901694646" class="text-white text-decoration-none fw-bold">
+            +998 90 169‑46‑46
+        </a>
 
-        <a href="tel:+998901694646" class="text-white text-decoration-none fw-bold">+998 90 169‑46‑46</a>
-
+        <!-- Menyu -->
         <nav>
-            <ul class="nav">
+            <ul class="nav align-items-center">
+
+                <!-- Til almashtirish (Home dan oldin) -->
+                <li class="nav-item">
+                    <div class="lang-dropdown position-relative">
+                        <button class="btn btn-light btn-sm d-flex align-items-center gap-1" onclick="toggleLangMenu()">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN ▾
+                        </button>
+                        <div class="lang-menu position-absolute bg-light rounded shadow-sm" 
+                             style="display:none; top:100%; left:0; min-width:90px;">
+                            <a href="index.html" class="d-flex align-items-center gap-1 px-2 py-1 text-dark text-decoration-none">
+                                <img src="https://flagcdn.com/w20/uz.png" alt="UZ"> UZ
+                            </a>
+                            <a href="index_ru.html" class="d-flex align-items-center gap-1 px-2 py-1 text-dark text-decoration-none">
+                                <img src="https://flagcdn.com/w20/ru.png" alt="RU"> RU
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Asosiy menyular -->
                 <li class="nav-item"><a class="nav-link text-white active" href="index_en.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="about_en.html">About</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="catalog_en.html">Catalogs</a></li>
@@ -58,7 +70,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
 <script>
     function toggleLangMenu(){
         const menu=document.querySelector('.lang-menu');
