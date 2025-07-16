@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталоги | Nova Print</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=13">
+</head>
+<body>
+  <div id="star-field"></div>
+
+  <!-- HEADER -->
+  <header class="bg-dark text-white">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between py-3">
+      <a href="index_ru.html" class="text-white text-decoration-none fs-4 fw-bold">Рекламное агентство</a>
+      <a href="tel:+998901694646" class="text-white text-decoration-none fs-4 fw-bold">+998 90 169‑46‑46</a>
+
+      <nav class="d-flex align-items-center gap-3">
+        <!-- Языки -->
+        <div class="lang-dropdown position-relative">
+          <button class="btn btn-light btn-sm d-flex align-items-center gap-1" onclick="toggleLangMenu()">
+            <img src="https://flagcdn.com/w20/ru.png" alt="RU"> RU ▾
+          </button>
+          <div class="lang-menu position-absolute bg-light rounded shadow-sm" style="display:none; top:100%; left:0; min-width:90px;">
+            <a href="catalog.html" class="d-flex align-items-center gap-1 px-2 py-1 text-dark text-decoration-none">
+              <img src="https://flagcdn.com/w20/uz.png" alt="UZ"> UZ
+            </a>
+            <a href="catalog_en.html" class="d-flex align-items-center gap-1 px-2 py-1 text-dark text-decoration-none">
+              <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN
+            </a>
+          </div>
+        </div>
+
+        <!-- Меню -->
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index_ru.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about_ru.html">О нас</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="catalog_ru.html">Каталоги</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact_ru.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- КАТАЛОГ -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4 text-white">Каталог услуг</h1>
+      <div class="row g-4">
+        <!-- Карточки -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-shtender">
+            <img src="assets/img/shtender/main.jpg" class="card-img-top" alt="Штендер">
+            <div class="card-body">
+              <h5 class="card-title">Штендеры</h5>
+              <p class="card-text">Рекламные стенды</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-bayroq">
+            <img src="assets/img/bayroq/main.jpg" class="card-img-top" alt="Флаги">
+            <div class="card-body">
+              <h5 class="card-title">Флаги</h5>
+              <p class="card-text">Государственные и рекламные</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-merch">
+            <img src="assets/img/merch/main.png" class="card-img-top" alt="Мерч">
+            <div class="card-body">
+              <h5 class="card-title">Печать на мерче</h5>
+              <p class="card-text">Футболки, кепки, кружки</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-banner">
+            <img src="assets/img/banner/main.jpg" class="card-img-top" alt="Баннер">
+            <div class="card-body">
+              <h5 class="card-title">Баннер / Оракал</h5>
+              <p class="card-text">Широкоформатная реклама</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-letter">
+            <img src="assets/img/letter/main.jpg" class="card-img-top" alt="Буквы">
+            <div class="card-body">
+              <h5 class="card-title">Объемные буквы</h5>
+              <p class="card-text">LED и классические</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-print">
+            <img src="assets/img/print/main.jpg" class="card-img-top" alt="Печать">
+            <div class="card-body">
+              <h5 class="card-title">Полиграфия</h5>
+              <p class="card-text">Визитки, флаеры, буклеты…</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal-logo">
+            <img src="assets/img/logo/main.jpg" class="card-img-top" alt="Логотип">
+            <div class="card-body">
+              <h5 class="card-title">Дизайн логотипа</h5>
+              <p class="card-text">Лого и бренд‑кит</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      &copy; 2025 Сделано Джамшитовым Давлатом
+    </div>
+  </footer>
+
+  <!-- Остальные скрипты как в оригинале -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleLangMenu(){
+      const menu=document.querySelector('.lang-menu');
+      menu.style.display=(menu.style.display==='block')?'none':'block';
+    }
+    document.addEventListener('click',e=>{
+      const drop=document.querySelector('.lang-dropdown');
+      if(!drop.contains(e.target)){
+        document.querySelector('.lang-menu').style.display='none';
+      }
+    });
+  </script>
+</body>
+</html>
